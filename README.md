@@ -19,7 +19,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## Deploy do projeto
 
-##### Link de acesso: https://challenge-auaha-ozn9hlqy1-luisevandro.vercel.app/
+##### Link de acesso:
 
 ## Como executar
 
