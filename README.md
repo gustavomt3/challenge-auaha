@@ -1,5 +1,5 @@
 <p align="center">
-  <img src=".github/logo-challenge-auaha.png" alt="Auaha" />
+  <img src=".github/logo-challenge-auaha-branca.png" alt="Auaha" />
 </p>
 
 <p align="center">
