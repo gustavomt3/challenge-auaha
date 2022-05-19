@@ -4,7 +4,7 @@
 
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/gustavomt3/challenge-auaha">
-  <img alt="GitHub last commit (branch)" src="https://img.shields.io/github/last-commit/gustavomt3/challenge-auaha/main">
+  <img alt="GitHub last commit (branch)" src="https://img.shields.io/github/last-commit/gustavomt3/challenge-auaha/master">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/gustavomt3/challenge-auaha">
 </p>
 <br>
