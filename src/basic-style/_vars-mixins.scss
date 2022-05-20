@@ -1,0 +1,92 @@
+/////////////////////////
+////     Mixins      ////
+/////////////////////////
+@mixin mobile-s {
+  @media (min-width: 320px) {
+    @content;
+  }
+}
+
+@mixin mobile-m {
+  @media only screen and(min-width: 375px) {
+    @content;
+  }
+}
+
+@mixin mobile-l {
+  @media only screen and(min-width: 425px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media only screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin laptop-l {
+  @media only screen and (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: 1600px) {
+    @content;
+  }
+}
+
+/////////////////////////
+////Containers & Flex////
+/////////////////////////
+
+.container {
+  margin: 0 auto;
+  @include mobile-s {
+    max-width: 280px;
+  }
+  @include mobile-m {
+    max-width: 280px;
+  }
+  @include mobile-l {
+    max-width: 280px;
+  }
+  @include tablet {
+    max-width: 580px;
+  }
+  @include laptop {
+    max-width: 880px;
+  }
+  @include laptop-l {
+    max-width: 1180px;
+  }
+  @include desktop {
+    max-width: 1180px;
+  }
+}
+
+/////////////////////////
+////     Colors      ////
+/////////////////////////
+
+$primaryColor: #222222;
+$secondColor: #fff;
+$thirdColor: #004563;
+$fourthColor: #231f20;
+
+/////////////////////////
+////      Fonts      ////
+/////////////////////////
+/* Legenda: 400 = Regular / 700 = Bold */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+$primaryFont: 'Lato', sans-serif;
+$secondaryFont: 'Great Vibes', cursive;
