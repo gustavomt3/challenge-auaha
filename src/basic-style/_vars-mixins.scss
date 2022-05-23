@@ -13,9 +13,11 @@
 /////////////////////////
 
 .container {
+  width: 100%;
   margin: 0 auto;
   @include desktop {
-    max-width: 1180px;
+    max-width: 1315px;
+    padding: 0 15px;
   }
 }
 
