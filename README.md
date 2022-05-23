@@ -21,7 +21,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## Deploy do projeto
 
-##### Link de acesso:
+##### Link de acesso: http://auaha.site/
 
 ## Como executar
 
