@@ -14,14 +14,6 @@
 }
 
 /////////////////////////
-////     Fontes      ////
-/////////////////////////
-
-@mixin textMedium {
-  font-weight: 600;
-}
-
-/////////////////////////
 ////Containers & Flex////
 /////////////////////////
 
@@ -42,7 +34,8 @@
 $primaryColor: #222222;
 $secondColor: #fff;
 $thirdColor: #000;
-$fourthColor: #231f20;
+$fourthColor: #999;
+$fifthColor: #f8f8f8;
 
 /////////////////////////
 ////      Fonts      ////
