@@ -8,8 +8,11 @@ import { GlobalContext } from '../GlobalContext';
 import Cart from './Subcomponents/Cart';
 import MenuHamburguer from './Subcomponents/MenuHamburguer';
 import Search from './Subcomponents/Search';
+import Account from './Subcomponents/Account';
 //Images
 import logo from '../../Assets/logo.svg';
+import iconCel from '../../Assets/icone-cel.svg';
+import iconCelCinza from '../../Assets/icone-cel-cinza.svg';
 
 const Header = () => {
   const global = React.useContext(GlobalContext);
@@ -41,9 +44,17 @@ const Header = () => {
             }`}
           />
           <div className={styles.containerItemsMenu}>
-            <div style={styles.containerMyAccount}></div>
-            {/* <div style={styles.containerNumber}></div>
-            <div style={styles.containerCart}></div> */}
+            <Account />
+            <div className={styles.containerNumber}>
+              <img src={iconCel} alt="Icon Cel" className={styles.iconCel} />
+              <img
+                src={iconCelCinza}
+                alt="Icon Cel"
+                className={styles.iconCelCinza}
+              />
+              <p>(99) 99999-9999</p>
+            </div>
+            <Cart />
           </div>
         </div>
       </div>
