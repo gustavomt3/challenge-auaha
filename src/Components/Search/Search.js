@@ -1,12 +1,12 @@
 import React from 'react';
 //Styles
-import styles from '../Header.module.scss';
+import styles from './Search.module.scss';
 //Context
-import { GlobalContext } from '../../GlobalContext';
+import { GlobalContext } from '../../Contexts/GlobalContext';
 //Images
-import iconSearch from '../../../Assets/icon-search.svg';
-import anelSearch from '../../../Assets/anel-search.png';
-import brincoSearch from '../../../Assets/brinco-search.png';
+import iconSearch from '../../Assets/icon-search.svg';
+import anelSearch from '../../Assets/anel-search.png';
+import brincoSearch from '../../Assets/brinco-search.png';
 
 const Search = () => {
   const global = React.useContext(GlobalContext);

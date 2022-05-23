@@ -1,0 +1,128 @@
+@import '../../GlobalStyles/vars-mixins';
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 57.41px;
+  &.active {
+    width: 100%;
+  }
+  .spansHamburguer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    z-index: 400;
+    padding: 20px 13px 20px 20px;
+    .linha1 {
+      position: absolute;
+      background-color: $thirdColor;
+      height: 4px;
+      width: 30px;
+      border: none;
+      border-radius: 4px;
+      left: 0;
+      transition: 0.5s ease-in-out;
+      &.active {
+        transform: rotate(45deg);
+        background-color: $thirdColor;
+      }
+    }
+    .linha2 {
+      position: absolute;
+      background-color: $thirdColor;
+      height: 4px;
+      width: 30px;
+      border: none;
+      border-radius: 4px;
+      top: 10px;
+      left: 0;
+      transition: 0.5s ease-in-out;
+      &.active {
+        transform: rotate(-45deg);
+        top: 18px;
+        background-color: $thirdColor;
+      }
+    }
+    .linha3 {
+      position: absolute;
+      background-color: $thirdColor;
+      height: 4px;
+      width: 30px;
+      border: none;
+      border-radius: 4px;
+      top: 26px;
+      left: 0;
+      transition: 0.5s ease-in-out;
+      &.active {
+        transform: rotate(-45deg);
+        top: 18px;
+        background-color: $thirdColor;
+      }
+    }
+  }
+  .iconMenu {
+    display: none;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+    &.active {
+      display: flex;
+      animation: showUlMenu 0.5s forwards;
+    }
+  }
+  .ulMenu {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: $secondColor;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    padding: 70px 15px 0 15px;
+    &.active {
+      display: flex;
+      animation: showUlMenu 0.5s forwards;
+    }
+    li {
+      display: flex;
+      flex-direction: column;
+      border-top: 1px solid #999999;
+      padding: 10px 0;
+      div {
+        display: flex;
+        justify-content: space-between;
+        p {
+          font-weight: 600;
+          &:hover {
+            transition: 0.3s ease;
+            color: $thirdColor;
+          }
+        }
+        img {
+          transition: 0.4s;
+          &.active {
+            transform: rotate(90deg);
+          }
+        }
+        &.active {
+          margin-bottom: 10px;
+        }
+      }
+      ul {
+        display: none;
+        padding-left: 10px;
+        li {
+          font-weight: 600;
+        }
+        &.active {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

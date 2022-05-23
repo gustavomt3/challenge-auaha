@@ -1,9 +1,9 @@
 import React from 'react';
 //Styles
-import styles from '../Header.module.scss';
+import styles from './Account.module.scss';
 //Images
-import iconLogin from '../../../Assets/icon-login.png';
-import iconLoginCinza from '../../../Assets/icon-login-cinza.svg';
+import iconLogin from '../../Assets/icon-login.png';
+import iconLoginCinza from '../../Assets/icon-login-cinza.svg';
 
 const Account = () => {
   return (

@@ -1,10 +1,10 @@
 import React from 'react';
 //Context
-import { GlobalContext } from '../../GlobalContext';
+import { GlobalContext } from '../../Contexts/GlobalContext';
 //Styles
-import styles from '../Header.module.scss';
+import styles from './Cart.module.scss';
 //Images
-import iconCart from '../../../Assets/icon-cart.svg';
+import iconCart from '../../Assets/icon-cart.svg';
 
 const Cart = () => {
   const global = React.useContext(GlobalContext);

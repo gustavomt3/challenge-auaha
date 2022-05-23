@@ -3,12 +3,12 @@ import React from 'react';
 //Styles
 import styles from './Header.module.scss';
 //Context
-import { GlobalContext } from '../GlobalContext';
+import { GlobalContext } from '../../Contexts/GlobalContext';
 //SubComponents
-import Cart from './Subcomponents/Cart';
-import MenuHamburguer from './Subcomponents/MenuHamburguer';
-import Search from './Subcomponents/Search';
-import Account from './Subcomponents/Account';
+import Cart from '../Cart/Cart';
+import MenuHamburguer from '../MenuHamburguer/MenuHamburguer';
+import Search from '../Search/Search';
+import Account from '../Account/Account';
 //Images
 import logo from '../../Assets/logo.svg';
 import iconCel from '../../Assets/icone-cel.svg';

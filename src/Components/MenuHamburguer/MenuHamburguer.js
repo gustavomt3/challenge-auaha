@@ -1,11 +1,11 @@
 import React from 'react';
 //Styles
-import styles from '../Header.module.scss';
+import styles from './MenuHamburguer.module.scss';
 //Context
-import { GlobalContext } from '../../GlobalContext';
+import { GlobalContext } from '../../Contexts/GlobalContext';
 //Images
-import iconAccount from '../../../Assets/icon-login.png';
-import iconArrowBottomMenu from '../../../Assets/icon-arrow-bottom-menu.svg';
+import iconAccount from '../../Assets/icon-login.png';
+import iconArrowBottomMenu from '../../Assets/icon-arrow-bottom-menu.svg';
 
 const MenuHamburguer = () => {
   const global = React.useContext(GlobalContext);

@@ -1,0 +1,91 @@
+@import '../../GlobalStyles/vars-mixins';
+
+.containerMyAccount {
+  position: relative;
+  .divAccount {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    .iconLoginCinza {
+      display: none;
+    }
+    .iconLogin {
+      display: block;
+    }
+    .textAccount {
+      font-size: 0.875rem;
+      margin-left: 10px;
+      font-weight: 600;
+    }
+  }
+  .elementsAccount {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 100%;
+    width: 232px;
+    height: 214px;
+    right: -60px;
+    margin-top: 15px;
+    z-index: 1;
+    background-color: $secondColor;
+    box-shadow: 0px 0px 9px 0px #22222242;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    &::after {
+      content: '';
+      position: absolute;
+      top: -15px;
+      left: 100px;
+      border-left: 15px solid transparent;
+      border-bottom: 15px solid $secondColor;
+      border-right: 15px solid transparent;
+      border-top: 0 solid $secondColor;
+      display: block;
+      width: 0;
+      z-index: 1;
+    }
+    .first {
+      display: flex;
+      flex-direction: column;
+      p {
+        font-weight: 600;
+        color: $primaryColor;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+    }
+    .last {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      background-color: $fifthColor;
+      padding: 20px 0;
+      height: 115px;
+      p {
+        font-size: 0.8125rem;
+        color: $fourthColor;
+        font-weight: 600;
+        margin: 5px 0;
+        cursor: pointer;
+      }
+    }
+  }
+  &:hover {
+    .iconLogin {
+      display: none;
+    }
+    .iconLoginCinza {
+      display: block;
+    }
+    .elementsAccount {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
