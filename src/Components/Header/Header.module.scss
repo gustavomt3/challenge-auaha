@@ -9,6 +9,9 @@ body {
 
 .headerMobile {
   position: relative;
+  @include desktop {
+    display: none;
+  }
   .elementsMobile {
     position: fixed;
     display: flex;
@@ -191,7 +194,7 @@ body {
         top: 40px;
         right: 0;
         background-color: $secondColor;
-        box-shadow: 0 0 30px -10px $primaryColor;
+        box-shadow: 0px 0px 9px 0px #22222242;
         opacity: 0;
         visibility: hidden;
         transition: all 0.3s ease-in-out;
@@ -268,11 +271,6 @@ body {
         border-bottom-left-radius: 50px;
         padding-left: 20px;
         outline-style: none;
-        &.active {
-          border-top: solid 1px $primaryColor;
-          border-left: solid 1px $primaryColor;
-          border-bottom: solid 1px $primaryColor;
-        }
       }
       .iconSearch {
         display: flex;
@@ -283,11 +281,6 @@ body {
         background-color: $fifthColor;
         border-top-right-radius: 50px;
         border-bottom-right-radius: 50px;
-        &.active {
-          border-top: solid 1px $primaryColor;
-          border-right: solid 1px $primaryColor;
-          border-bottom: solid 1px $primaryColor;
-        }
       }
     }
     .containerElementsSearch {
@@ -302,9 +295,11 @@ body {
         visibility: visible;
         opacity: 1;
       }
-      p {
+      .titleElementsSearch {
         text-align: center;
-        padding: 15px 0;
+        padding: 24px 0;
+        font-size: 0.875rem;
+        font-weight: 600;
       }
       .subCategoriesSearch {
         display: flex;
@@ -335,8 +330,126 @@ body {
             text-align: left;
             text-transform: uppercase;
             padding: 0;
+            font-size: 0.875rem;
+            font-weight: 600;
           }
         }
+      }
+    }
+  }
+}
+
+.headerDesktop {
+  display: none;
+  position: fixed;
+  width: 100%;
+  padding: 15px 15px 0 15px;
+  background-color: $secondColor;
+  z-index: 155;
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+  .containerSearch {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    padding: 0 15px;
+    .divInput {
+      display: flex;
+      align-items: center;
+      z-index: 10;
+      .inputSearch {
+        width: 100%;
+        border: none;
+        height: 48px;
+        background-color: $fifthColor;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        padding-left: 20px;
+        outline-style: none;
+        &.active {
+          border-top: solid 1px $primaryColor;
+          border-left: solid 1px $primaryColor;
+          border-bottom: solid 1px $primaryColor;
+        }
+      }
+      .iconSearch {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 48px;
+        width: 50px;
+        background-color: $fifthColor;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        &.active {
+          border-top: solid 1px $primaryColor;
+          border-right: solid 1px $primaryColor;
+          border-bottom: solid 1px $primaryColor;
+        }
+      }
+    }
+    .containerElementsSearch {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 370px;
+      visibility: hidden;
+      opacity: 0;
+      cursor: pointer;
+      top: 19px;
+      padding-top: 19px;
+      transition: opacity 0.4s ease-in-out;
+      box-shadow: 0px 0px 9px 0px #22222242;
+      z-index: -1;
+      .titleElementsSearch {
+        text-align: center;
+        padding: 24px 0;
+        font-size: 0.875rem;
+        font-weight: 600;
+      }
+      .subCategoriesSearch {
+        display: flex;
+        justify-content: space-around;
+        p {
+          color: $fourthColor;
+          font-size: 0.875rem;
+          padding: 0;
+          margin-bottom: 22px;
+        }
+      }
+      .containerProductsSearch {
+        display: flex;
+        flex-direction: column;
+        background-color: $fifthColor;
+        padding: 30px;
+        .productsSearch {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          margin-bottom: 30px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          img {
+            margin-right: 20px;
+          }
+          p {
+            text-align: left;
+            text-transform: uppercase;
+            padding: 0;
+            font-size: 0.875rem;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    &:hover {
+      .containerElementsSearch {
+        visibility: visible;
+        opacity: 1;
       }
     }
   }

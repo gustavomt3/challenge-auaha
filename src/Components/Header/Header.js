@@ -25,7 +25,7 @@ const Header = () => {
     setCart((cart) => !cart);
   }
 
-  function clickSearch() {
+  function openSearch() {
     setSearch((search) => !search);
   }
 
@@ -199,17 +199,11 @@ const Header = () => {
         <div className={styles.containerSearch}>
           <div className={styles.divInput}>
             <input
-              className={`${styles.inputSearch} ${
-                search ? `${styles.active}` : ''
-              }`}
+              className={styles.inputSearch}
               placeholder="O que deseja encontrar?"
-              onClick={clickSearch}
+              onClick={openSearch}
             />
-            <div
-              className={`${styles.iconSearch} ${
-                search ? `${styles.active}` : ''
-              }`}
-            >
+            <div className={styles.iconSearch}>
               <img src={iconSearch} alt="Icon Search" />
             </div>
           </div>
@@ -218,7 +212,7 @@ const Header = () => {
               search ? `${styles.active}` : ''
             }`}
           >
-            <p>Sugestões</p>
+            <p className={styles.titleElementsSearch}>Sugestões</p>
             <div className={styles.subCategoriesSearch}>
               <p>Brinco</p>
               <p>Brinco Prata</p>
@@ -236,6 +230,43 @@ const Header = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className={styles.headerDesktop}>
+        <div className={styles.containerSearch}>
+          <div className={styles.divInput}>
+            <input
+              className={styles.inputSearch}
+              placeholder="O que deseja encontrar?"
+            />
+            <div className={styles.iconSearch}>
+              <img src={iconSearch} alt="Icon Search" />
+            </div>
+          </div>
+          <div className={styles.containerElementsSearch}>
+            <p className={styles.titleElementsSearch}>Sugestões</p>
+            <div className={styles.subCategoriesSearch}>
+              <p>Brinco</p>
+              <p>Brinco Prata</p>
+              <p>Brinco Ouro</p>
+            </div>
+            <div className={styles.containerProductsSearch}>
+              <div className={styles.productsSearch}>
+                <img src={anelSearch} alt="Anel Search" />
+                <p>anel banhado ouro reto com zirconia</p>
+              </div>
+              <div className={styles.productsSearch}>
+                <img src={brincoSearch} alt="Brinco Search" />
+                <p>brinco de ouro brancho com diamantes</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src={logo}
+          alt="Logo Auaha"
+          className={`${styles.logo} ${active ? `${styles.active}` : ''}`}
+        />
       </div>
     </header>
   );

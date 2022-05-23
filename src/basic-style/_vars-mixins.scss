@@ -1,14 +1,9 @@
 /////////////////////////
 ////     Mixins      ////
 /////////////////////////
-@mixin mobile {
-  @media (min-width: 320px) {
-    @content;
-  }
-}
 
 @mixin desktop {
-  @media only screen and (min-width: 1600px) {
+  @media only screen and (min-width: 1081px) {
     @content;
   }
 }
@@ -19,9 +14,6 @@
 
 .container {
   margin: 0 auto;
-  @include mobile {
-    max-width: 280px;
-  }
   @include desktop {
     max-width: 1180px;
   }
