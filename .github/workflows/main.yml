@@ -16,3 +16,4 @@ jobs:
           username: ${{ secrets.ftp_user }}
           password: ${{ secrets.ftp_password }}
           server-dir: /domains/auaha.site/public_html/
+          local-dir: ./build/
