@@ -1,0 +1,80 @@
+@import '../../GlobalStyles/vars-mixins';
+
+.containerGeralMenuDesktop {
+  width: 100%;
+  margin-top: 20px;
+  border-top: 2px solid $fifthColor;
+  background-color: $secondColor;
+  .containerItemsMenu {
+    max-width: 875px;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-weight: 600;
+    color: $primaryColor;
+    .liItensNavPrincipal {
+      position: relative;
+      cursor: pointer;
+      &:hover {
+        .ulPrimeiroNivel {
+          opacity: 1;
+          visibility: visible;
+          margin-top: 0;
+        }
+      }
+      .ulPrimeiroNivel {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 1315px;
+        min-width: 954px;
+        max-height: 378px;
+        z-index: 200;
+        padding-left: 110px;
+        margin: 15px auto 0;
+        background: $secondColor;
+        box-shadow: 0px 0px 9px 0px #22222242;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+        top: 35px;
+        left: -590%;
+        &::after {
+          content: '';
+          position: absolute;
+          top: -15px;
+          left: 245px;
+          border-left: 15px solid transparent;
+          border-bottom: 15px solid $secondColor;
+          border-right: 15px solid transparent;
+          border-top: 0 solid $secondColor;
+          display: block;
+          width: 0;
+          z-index: 1;
+        }
+        .liPrimeiroNivel {
+          p {
+            font-weight: 700;
+            color: $primaryColor;
+          }
+          .ulSegundoNivel {
+            li {
+              margin: 10px 0;
+              color: $fourthColor;
+              cursor: pointer;
+              font-size: 0.875rem;
+              font-weight: 400;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+    }
+  }
+}

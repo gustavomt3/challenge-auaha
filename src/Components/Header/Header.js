@@ -4,11 +4,12 @@ import React from 'react';
 import styles from './Header.module.scss';
 //Context
 import { GlobalContext } from '../../Contexts/GlobalContext';
-//SubComponents
+//Components
 import Cart from '../Cart/Cart';
 import MenuHamburguer from '../MenuHamburguer/MenuHamburguer';
 import Search from '../Search/Search';
 import Account from '../Account/Account';
+import MenuDesktop from '../MenuDesktop/MenuDesktop';
 //Images
 import logo from '../../Assets/logo.svg';
 import iconCel from '../../Assets/icone-cel.svg';
@@ -57,6 +58,7 @@ const Header = () => {
             <Cart />
           </div>
         </div>
+        <MenuDesktop />
       </div>
     </header>
   );
