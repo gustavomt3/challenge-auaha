@@ -20,7 +20,14 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [Node.js](https://nodejs.org/en/)
 - [React](https://reactjs.org)
+
+### Pré-Processadores
+
 - [SASS](https://sass-lang.com/)
+
+### Plugins
+
+- [Glide](https://glidejs.com/)
 
 ## Deploy do projeto
 
