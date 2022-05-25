@@ -46,11 +46,11 @@ const MenuDesktop = () => {
             </li>
           </ul>
         </li>
-        <li>Brincos</li>
-        <li>Colares</li>
-        <li>Pingentes</li>
-        <li>Pulseiras</li>
-        <li>Kits</li>
+        <li className={styles.liItensNavPrincipal}>Brincos</li>
+        <li className={styles.liItensNavPrincipal}>Colares</li>
+        <li className={styles.liItensNavPrincipal}>Pingentes</li>
+        <li className={styles.liItensNavPrincipal}>Pulseiras</li>
+        <li className={styles.liItensNavPrincipal}>Kits</li>
       </ul>
     </nav>
   );

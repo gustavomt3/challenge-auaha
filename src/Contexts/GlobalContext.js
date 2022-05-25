@@ -21,9 +21,21 @@ export const GlobalStore = ({ children }) => {
   function openCart() {
     setCart((cart) => !cart);
   }
+
+  // const numberList = document.querySelectorAll('.glide__slide').map((item) => {
+  //   return item.length;
+  // });
+
   return (
     <GlobalContext.Provider
-      value={{ openMenu, openSearch, active, search, cart, openCart }}
+      value={{
+        openMenu,
+        openSearch,
+        active,
+        search,
+        cart,
+        openCart,
+      }}
     >
       {children}
     </GlobalContext.Provider>
