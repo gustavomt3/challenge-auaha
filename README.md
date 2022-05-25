@@ -6,6 +6,7 @@
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/gustavomt3/challenge-auaha">
   <img alt="GitHub last commit (branch)" src="https://img.shields.io/github/last-commit/gustavomt3/challenge-auaha/master">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/gustavomt3/challenge-auaha">
+  [<img alt="Deployed with FTP Deploy Action" src="https://img.shields.io/badge/Deployed With-FTP DEPLOY ACTION-%3CCOLOR%3E?style=for-the-badge&color=2b9348">](https://github.com/SamKirkland/FTP-Deploy-Action)
 </p>
 <br>
 
