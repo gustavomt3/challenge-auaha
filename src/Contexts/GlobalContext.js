@@ -22,10 +22,6 @@ export const GlobalStore = ({ children }) => {
     setCart((cart) => !cart);
   }
 
-  // const numberList = document.querySelectorAll('.glide__slide').map((item) => {
-  //   return item.length;
-  // });
-
   return (
     <GlobalContext.Provider
       value={{

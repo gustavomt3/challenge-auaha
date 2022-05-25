@@ -12,21 +12,15 @@ const Slider = ({
   optionsGlide,
   statusDot,
   statusArrow,
+  numberList,
 }) => {
-  const mainGlide = new Glide(`.${classContainer}`, optionsGlide);
-
   React.useEffect(() => {
+    const mainGlide = new Glide(`.${classContainer}`, optionsGlide);
     return () => mainGlide.mount();
-  }, [mainGlide]);
+  });
 
   let dot = statusDot;
   let arrow = statusArrow;
-
-  const numberList = document.querySelectorAll('.glide__slide').length;
-
-  React.useEffect(() => {
-    return () => numberList;
-  }, [numberList]);
 
   let loopDots = [];
   for (let i = 0; i < numberList; i++) {
