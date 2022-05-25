@@ -18,7 +18,7 @@ const MenuDesktop = () => {
                 <li>Solitária</li>
                 <li>Cristal</li>
                 <li>Pérola</li>
-                <li>Zircônia</li>
+                <li>Zircônia a</li>
               </ul>
             </li>
             <li className={styles.liPrimeiroNivel}>
