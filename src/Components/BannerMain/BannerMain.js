@@ -5,12 +5,6 @@ import Slider from '../Slider/Slider';
 import { dataImagesBanner } from '../../DataRequest/ImagesBanner';
 
 const BannerMain = () => {
-  const liImages = dataImagesBanner.map((images, index) => (
-    <li className="glide__slide" key={index}>
-      <img src={images.ImageBanner} alt="Imagem Banner" />
-    </li>
-  ));
-
   const [dimensions, setDimensions] = React.useState(null);
 
   React.useEffect(() => {
@@ -31,9 +25,13 @@ const BannerMain = () => {
       <Slider
         statusArrow={dimensions}
         statusDot={true}
-        numberList={liImages.length}
+        numberList={dataImagesBanner.length}
       >
-        {liImages}
+        {dataImagesBanner.map((images, index) => (
+          <li className="glide__slide" key={index}>
+            <img src={images} alt="Imagem Banner" />
+          </li>
+        ))}
       </Slider>
     </>
   );
