@@ -49,6 +49,5 @@ O app estará disponível no seu browser pelo endereço http://localhost:3000.
 ## Layout
 
 <p align="center">
-    <img src=".github/layout-topo.jpeg" alt="Layout Auaha 1" />
-    <img src=".github/layout-rodape.jpeg" alt="Layout Auaha 2" />
+    <img src=".github/layout-site-auaha.jpeg" alt="Layout Auaha" />
 </p>
