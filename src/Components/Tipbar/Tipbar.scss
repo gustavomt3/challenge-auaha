@@ -1,0 +1,52 @@
+@import '../../GlobalStyles/vars-mixins';
+.containerTipbar {
+  padding: 42px 0;
+  background-color: $fifthColor;
+  .divMobile {
+    @include desktop {
+      display: none;
+    }
+  }
+  .divDesktop {
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+    @include desktop {
+      display: flex;
+    }
+    .div-tipbar {
+      display: flex;
+      align-self: center;
+      justify-content: center;
+      img {
+        margin-right: 10px;
+      }
+      p {
+        font-size: 1.125rem;
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+.glide2 {
+  .glide__slides {
+    .glide__slide {
+      display: flex;
+      align-self: center;
+      justify-content: center;
+      img {
+        margin-right: 10px;
+      }
+      p {
+        font-size: 1.125rem;
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

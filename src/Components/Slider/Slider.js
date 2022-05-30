@@ -7,7 +7,7 @@ import ArrowRight from '../../Assets/arrow-right.svg';
 import ArrowLeft from '../../Assets/arrow-left.svg';
 
 const Slider = ({
-  classContainer = 'glide',
+  classContainer,
   children,
   optionsGlide,
   statusDot,
@@ -35,7 +35,7 @@ const Slider = ({
 
   return (
     <>
-      <div className={classContainer}>
+      <div className={`glide ${classContainer}`}>
         <div className="glide__track" data-glide-el="track">
           <ul className="glide__slides">{children}</ul>
         </div>

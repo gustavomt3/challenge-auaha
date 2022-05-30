@@ -1,24 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.892abb6a.css",
-    "main.js": "/static/js/main.64e2b81d.js",
+    "main.css": "/static/css/main.b9ba34a1.css",
+    "main.js": "/static/js/main.0334e5af.js",
     "static/media/image-banner.png": "/static/media/image-banner.695a986f16afb07b10a8.png",
     "static/media/anel-nav-desktop.png": "/static/media/anel-nav-desktop.eb8044c66ccee80f7c21.png",
     "static/media/logo.svg": "/static/media/logo.9f879494e799fbf020cf074e26a01718.svg",
+    "static/media/icon-caixa.svg": "/static/media/icon-caixa.381e57195802cf4e3f96a3b535275228.svg",
     "static/media/icone-cel-cinza.svg": "/static/media/icone-cel-cinza.3b187b4f850be66782b997c184495015.svg",
     "static/media/icone-cel.svg": "/static/media/icone-cel.550461e341e75e2aef539cef6e96f51a.svg",
     "static/media/icon-login-cinza.svg": "/static/media/icon-login-cinza.990764266bf7639d75c35c6d3363acc2.svg",
+    "static/media/icon-credcard.svg": "/static/media/icon-credcard.89f7809127e1f4de2c04000fc7de421b.svg",
     "index.html": "/index.html",
     "static/media/icon-cart.svg": "/static/media/icon-cart.ceaa65e563f7bd54a178d098fa256b15.svg",
     "static/media/arrow-left.svg": "/static/media/arrow-left.9a76044807887c773c50b62b522e0149.svg",
     "static/media/arrow-right.svg": "/static/media/arrow-right.623e2504ba00b47310e965103ea9c4b5.svg",
     "static/media/icon-search.svg": "/static/media/icon-search.6e5cfe0ff00278c49b2b9dc3f9b0d712.svg",
     "static/media/icon-arrow-bottom-menu.svg": "/static/media/icon-arrow-bottom-menu.616310d9d5a3ac06f4d7640ccdfbcac4.svg",
-    "main.892abb6a.css.map": "/static/css/main.892abb6a.css.map",
-    "main.64e2b81d.js.map": "/static/js/main.64e2b81d.js.map"
+    "main.b9ba34a1.css.map": "/static/css/main.b9ba34a1.css.map",
+    "main.0334e5af.js.map": "/static/js/main.0334e5af.js.map"
   },
   "entrypoints": [
-    "static/css/main.892abb6a.css",
-    "static/js/main.64e2b81d.js"
+    "static/css/main.b9ba34a1.css",
+    "static/js/main.0334e5af.js"
   ]
 }

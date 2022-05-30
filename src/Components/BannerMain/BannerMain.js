@@ -26,6 +26,7 @@ const BannerMain = () => {
         statusArrow={dimensions}
         statusDot={true}
         numberList={dataImagesBanner.length}
+        classContainer="glide1"
       >
         {dataImagesBanner.map((images, index) => (
           <li className="glide__slide" key={index}>
